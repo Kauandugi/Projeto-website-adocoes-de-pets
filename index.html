@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--Kauan Henrick Teixeira da Silva - 4ºB-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Vida PET</title>
+</head>
+<body>
+        <span class="tudao">
+    <section class="section1">
+    <div class="cabeçalho">
+       <nav class="nav1">
+        <img src="icons/icon.svg">
+        <ul class="menu">
+            <li><a onclick="home();">Home</a></li>
+            <li><a onclick="pagec();">Cadastrar PET</a></li>
+            <li><a onclick="adote();">Adotar PET</a></li>
+            <li><a onclick="modalvai();">Entrar | Cadastrar</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    
+
+    <section class="texto_centro">
+        <div class="area_texto">
+            <center><h1>Adotar um animal é valorizar a <strong>vida.</strong></h1></center>
+            <center>
+                <div class="minitexto"><p>Você está salvando uma vida!</p>
+            <p>E ele vai te retribuir com todo o coração dele!</p>
+        </div></center>
+           <center><a id="button1" href="#quadrados"    >Descubra mais</a></center>
+        </div>
+    </section>
+</section>
+     
+    <section class="quadrados" id="quadrados">
+        <div class="q1">
+            <center><img src="icons/img1.svg">
+                <center><h2>Proteção</h2></center>
+            <p>É dever do proprietário proteger seu animal do sol e da chuva, além de impedir que os bichinhos fujam ou saiam sozinhos na rua. Assim, evitamos brigas, atropelamentos, envenenamentos e crias indesejáveis.
+
+                </p>    
+        </center>
+        </div>
+
+        <div class="q2">
+                <center><img src="icons/img2.svg">
+                    <center><h2>Vacinação</h2></center>
+                <p>Cães e gatos possuem um esquema vacinal de acordo com sua espécie e características individuais. Geralmente, a vacinação é anual e só pode ser realizada por um médico veterinário. As vacinas previnem doenças graves que podem levar o animal à morte, bem como doenças que podem ser transmitidas para os humanos (zoonoses).
+                    </p>
+            </center>
+            </div>
+
+            <div class="q3">
+                    <center><img src="icons/img3.svg">
+                        <center><h2>Passeios e brincadeiras</h2></center>
+                    <p>Animais também precisam de atenção e carinho. Por isso, é necessário passear regularmente com os cães e brincar com brinquedos. Desse modo, estimulamos tanto a parte física quanto a psicológica, ajudando a prevenir doenças causadas por estresse e obesidade.</p>
+                </center>
+                </div>
+    </section>
+
+    <section class="section2">
+        <center><hr id="line"></center>
+        <div class="area">
+            <i><img src="img/left-image.png"></i><div class="texto">
+                    <center><h1><strong>Porque adotar um animal?</strong></h1></center>
+            <center><p>Ao escolher adotar, você vai oferecer a ele um lar – ou seja, uma nova oportunidade de viver bem e feliz -, além de ganhar um companheiro por muitos e muitos anos! <3 Outro grande benefício da adoção é que essa é também uma forma de se posicionar contra o comércio de animais. Quando você paga por um bichinho, você está tratando-o como se fosse uma mercadoria e colaborando com o que, popularmente, muitos chamam de “fábrica de filhotes”.</p>
+            </center></div>
+    </div>
+    </section>
+
+    <center><hr id="line2"></center>
+
+    <section class="section3">
+        <div class="area">
+            <i><img src="img/right-image.png"></i>
+            <div class="texto">
+                <center><h1>Vamos discutir isso</h1></center>
+                <center><p>Adotar um cão ou gato é uma atitude nobre. Mas antes de sequer cogitar isso, você precisa ter a certeza de que essa decisão é a melhor a ser tomada, pois adotar para devolver ou ainda abandoná-lo nas ruas daqui há algum tempo, definitivamente é um crime.</p></center>
+            </div>
+        </div>
+    </section>
+    
+    <center><hr id="line3"></center>
+
+    <section class="section4">
+        <div class="area">
+            <center><h1>Requisitos para adoção em Ongs</h1></center>
+            <div class="texto"><center><p>É necessário ser maior de 21 anos ou estar acompanhado de um responsável, e ter em mãos RG, CPF e comprovante de residência atualizados. </p></center>
+            <center><p>Muito provavelmente, você deve passar por uma entrevista, para que a organização analise se você está preparado para acolher um bichinho e evitar futuros abandonos. </p></center>
+        <center><p>É necessário levar guia (para cães) ou caixa de transporte (para gatos).</p></center>
+        <center><p>No CCZ de São Paulo, é preciso pagar uma taxa de R$ 16,20, pois o trâmite inclui a carteirinha do RGA (Registro Geral do Animal), uma plaqueta e um microship de identificação.</p></center>
+    </div>
+
+    </div>
+    </section>
+
+    <section class="section5">
+        <div class="area">
+          <h1>Fale conosco</h1>
+          <center><p>Estamos dispostos a tirar qualquer dúvida ou responder qualquer pergunta relacionada!</p></center>
+        </div>
+
+        <center><div class="area2">
+           <center><form>
+                <p><input placeholder="Nome Completo" type="text" id="nome" required><input placeholder="Endereço de e-mail" type="email" id="email" required></p>
+                <textarea placeholder="Sua mensagem" id="mensagem"></textarea>
+                <center><button type="submit" value="Send" onclick="salvar(nome.value, email.value, mensagem.value);">Enviar</button></center>
+            </form></center></center>
+        </div>
+    </section>
+</span>
+
+
+
+
+
+<div class="modalzao">
+<section class="modal">
+    <p id="x" onclick="fechamodal()">&times;</p>
+        <div class="area">
+                <div class="area2">
+                    <div class="isso"><center><h1><strong>Seja bem-vindo!</strong></h1></center>
+                <p><center>Para se manter conectado, faça login com suas informações pessoais</center></p>
+                <center><div class="buttons"><button onclick="registro();">Registrar-se</button>
+                    <button onclick="login();">Login</button>
+                </div></center>
+            </div>
+        </div>
+               
+                <div class="area3">
+                    <p><center><h1>Crie uma conta!</h1></center></p>
+                    <center><form>
+                       <p><label>Use seu e-mail para se registrar: </label></p>
+                       <p><input placeholder="Nome" type="text" required id="nomee"></p>
+                       <p><input placeholder="E-mail" type="email" required id="emaill"></p>
+                       <p><input placeholder="Senha" type="password" required minlength="6" id="senhaa"></p>
+                       <center><button onclick="vai(nomee.value, emaill.value, senhaa.value);">Registrar-se</button></center>
+                    </form></center>
+                </div>
+
+                <div class="area4">
+                        <center><p>Faça Login!</p></center>
+                        <center><form>
+                           <p><label>Use seu e-mail para efetuar login: </label></p>
+                           <p><input placeholder="E-mail" type="email" required id="emailll"></p>
+                           <p><input placeholder="Senha" type="password" required minlength="6" id="senhaaa"></p>
+                           <center><button onclick="vai2(emailll.value, senhaaa.value);" >Login</button></center>
+                        </form></center>
+
+                </div>
+
+        </div>
+        
+    </section>
+</div>
+
+
+<section class="tudao2">
+    <section class="back">
+        <div class="cabeçalho">
+                <nav class="nav1">
+                 <img src="icons/icon.svg">
+                 <ul class="menu">
+                        <li><a onclick="home();">Home</a></li>
+                     <li><a onclick="pagec();">Cadastrar PET</a></li>
+                     <li><a onclick="adote();">Adotar PET</a></li>
+                     <li><a onclick="modalvai();">Entrar | Cadastrar</a></li>
+                 </ul>
+             </nav>
+             </div>
+
+             <section class="texto_centro">
+                    <div class="area_texto">
+                        <center><h1>Obrigado por contribuir com nossa<strong> causa!</strong></h1></center>
+                       <center><a id="button1" href="#pets"  >Descubra mais</a></center>
+                    </div>
+                </section>
+            </section>
+
+
+
+
+
+             <section class="pets" id="pets">
+                 <div class="area">
+                     <p>
+                         <figure><img src="img/dog_muzzle_labrador_91601_1280x960.jpg" width="250px" height="200px"><legend>Dog1</legend></figure> 
+                         <figure><img src="img/dog_muzzle_labrador_91601_1280x960.jpg" width="250px" height="200px"><legend>Dog2</legend></figure> 
+                         <figure><img src="img/dog_muzzle_labrador_91601_1280x960.jpg" width="250px" height="200px"><legend>Dog3</legend></figure> 
+                         <figure><img src="img/dog_muzzle_labrador_91601_1280x960.jpg" width="250px" height="200px"><legend>Dog4</legend></figure> 
+                     </p>
+                     <p>
+                     <figure><img src="img/dog_muzzle_labrador_91601_1280x960.jpg" width="250px" height="200px"><legend>Dog1</legend></figure> 
+                         <figure><img src="img/dog_muzzle_labrador_91601_1280x960.jpg" width="250px" height="200px"><legend>Dog2</legend></figure> 
+                         <figure><img src="img/dog_muzzle_labrador_91601_1280x960.jpg" width="250px" height="200px"><legend>Dog3</legend></figure> 
+                         <figure><img src="img/dog_muzzle_labrador_91601_1280x960.jpg" width="250px" height="200px"><legend>Dog4</legend></figure> 
+                        </p>
+                 </div>
+
+             </section>
+
+             <section class="section5">
+                <div class="area">
+                  <h1>Fale conosco</h1>
+                  <center><p>Estamos dispostos a tirar qualquer dúvida ou responder qualquer pergunta relacionada!</p></center>
+                </div>
+        
+                <center><div class="area2">
+                   <center><form>
+                        <p><input placeholder="Nome Completo" type="text" id="nome" required><input placeholder="Endereço de e-mail" type="email" id="email" required></p>
+                        <textarea placeholder="Sua mensagem" id="mensagem"></textarea>
+                        <center><button type="submit" value="Send" onclick="salvar(nome.value, email.value, mensagem.value);">Enviar</button></center>
+                    </form></center></center>
+                </div>
+            </section>
+            </section>
+
+
+
+</section>
+
+<section class="modal2">
+    <p id="x" onclick="fechamodal2();">&times;</p>
+    <div class="area">
+        <div class="texto">
+        <h1>Cadastre seu PET</h1>
+        <center><form>
+            <p><label>Preencha com as informações do PET</label></p>
+             <p><input placeholder="Nome do PET" type="text" id="nome_pet" required></p>
+                <p><input id="img" type="file" value="Foto do PET" accept=".jpg, .jpeg, .png, .tiff, .TIFF"></p>
+                    <p><input placeholder="Local aproximado " type="text" id="local_pet" required></p>
+                    <p><button type="submit" value="Send" onclick="salvar3(nome_pet.value, img.value, local_pet.value);">Enviar</button></p>
+
+        </form></center>
+    </div>
+
+    </div>
+    
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
